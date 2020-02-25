@@ -1,3 +1,6 @@
+# A simple python script that converts a number into a string
+# @author Fabio Sabbion
+
 def num2str(number):
     units = ["","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
     dozens = ["","ten","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninty"]
@@ -33,4 +36,5 @@ def num2str(number):
     res.reverse() # reversing the final result 'cause i started from the last group of digits
     return " ".join(res).title()
 
-print(num2str(12345))
+# here is the result
+string = num2str(12345) # output: "Twelve Thousand Three Hundred Forty Five"
